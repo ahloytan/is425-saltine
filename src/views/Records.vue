@@ -38,11 +38,11 @@
                                     </a>
                                 </li>
                                 <input id="fileId" type="file" accept=".csv" hidden/>
-                                <router-link to="/recordsimport" class="px-0 text-decoration-none text-start">
+                                <li @click="exportAllRecords()">
                                     <a class="dropdown-item links" href="#">Import
                                         <i class="bi bi-file-earmark-plus icons"></i>
                                     </a>
-                                </router-link>
+                                </li>
                                 <li @click="exportAllRecords()">
                                     <a class="dropdown-item links" href="#">Export
                                         <i class="bi bi-cloud-download icons"></i>
@@ -78,16 +78,15 @@
                 selectedView: 'Default',
                 originalIdColumn: { id: 'id', name: 'ID', width: '4%'},
                 grid: new Grid({
-                    resizable: true,
                     columns: [
-                        { id: 'id', name: 'ID', width: '4%'},
-                        { id: 'name', name: 'Name', width: '8%'},
-                        { id: 'email', name: 'Email', width: '14%'},
-                        { id: 'mediaType', name: 'Media Type', width: '10%'},
-                        { id: 'jobTitle', name: 'Job Title', width: '13%'}, 
-                        { id: 'mediaInfo', name: 'Media Info', width: '16%'},
-                        { id: 'contact', name: 'Contact No.', width: '9%'}, 
-                        { id: 'sectors', name: 'Sectors', width: '13%',
+                        { id: 'id', name: 'ID'},
+                        { id: 'name', name: 'Name'},
+                        { id: 'email', name: 'Email'},
+                        { id: 'mediaType', name: 'Media Type'},
+                        { id: 'jobTitle', name: 'Job Title'}, 
+                        { id: 'mediaInfo', name: 'Media Info'},
+                        { id: 'contact', name: 'Contact No.'}, 
+                        { id: 'sectors', name: 'Sectors',
                             formatter: (cell) => {
                                 let output = ""
                                 for (let c of cell.split(",")) {
@@ -104,7 +103,6 @@
                                     onClick: () => this.toEditClinicianAppointment(row.cells[0].data)
                                 }, '')
                             },                             
-                            width: '5%'
                         },
                     ],
                     data: [],

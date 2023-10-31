@@ -83,24 +83,25 @@
 				this.$emit('removeTask')
 			},
 			async sendTeleMsg() {
-				const botToken = import.meta.env.VITE_TELE_API;
-				const chatId = import.meta.env.VITE_CHAT_ID;
-				console.log(botToken, chatId)
-				const telegramAPI = `https://api.telegram.org/bot${botToken}/sendMessage`;
-				const response = await fetch(telegramAPI, {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify({
-						chat_id: chatId,
-						text: 'Hello Team, please remember to follow up with Sarangly about the confirmed media list as it has been 3 weeks! Thankss',
-					}),
-				});
+				alert("Supposingly, this would send a telegram message. However, as this project is only for demonstration purposes, the feature is unavailable on the hosted website. If you require this functionality, feel free to drop Aloysius a telegram message via @ahloysius or through email via aloysiustan.2020@scis.smu.edu.sg")
+				// const botToken = import.meta.env.VITE_TELE_API;
+				// const chatId = import.meta.env.VITE_CHAT_ID;
+				// console.log(botToken, chatId)
+				// const telegramAPI = `https://api.telegram.org/bot${botToken}/sendMessage`;
+				// const response = await fetch(telegramAPI, {
+				// 	method: 'POST',
+				// 	headers: {
+				// 		'Content-Type': 'application/json',
+				// 	},
+				// 	body: JSON.stringify({
+				// 		chat_id: chatId,
+				// 		text: 'Hello Team, please remember to follow up with Sarangly about the confirmed media list as it has been 3 weeks! Thankss',
+				// 	}),
+				// });
 
-				const data = await response.json();
+				// const data = await response.json();
 
-				console.log(data)
+				// console.log(data)
 			}
 		}
 	}

@@ -6,7 +6,7 @@
 				<br>
 			</div>
 			<div id="new" v-bind:align="projects.length===0 ? 'center' : '' ">
-					<button type="button" class="btn btn-info me-3" @click="isModalActive = true; teamModalType = 'cProj'">
+					<button type="button" class="btn btn-info mb-2 mb-sm-0 me-md-3" @click="isModalActive = true; teamModalType = 'cProj'">
 						Create New Project
 					</button>
 					<button type="button" class="btn btn-info" @click="isModalActive = true; teamModalType = 'jProj'">

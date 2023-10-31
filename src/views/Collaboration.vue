@@ -60,16 +60,15 @@ export default {
         return {
             loading: false,
             grid: new Grid({
-                    resizable: true,
                     columns: [
-                        { id: 'id', name: 'ID', width: '4%'},
-                        { id: 'name', name: 'Name', width: '8%'},
-                        { id: 'email', name: 'Email', width: '14%'},
-                        { id: 'mediaType', name: 'Media Type', width: '10%'},
-                        { id: 'jobTitle', name: 'Job Title', width: '13%'}, 
-                        { id: 'mediaInfo', name: 'Media Info', width: '16%'},
-                        { id: 'contact', name: 'Contact No.', width: '9%'}, 
-                        { id: 'sectors', name: 'Sectors', width: '13%',
+                        { id: 'id', name: 'ID'},
+                        { id: 'name', name: 'Name'},
+                        { id: 'email', name: 'Email'},
+                        { id: 'mediaType', name: 'Media Type'},
+                        { id: 'jobTitle', name: 'Job Title'}, 
+                        { id: 'mediaInfo', name: 'Media Info'},
+                        { id: 'contact', name: 'Contact No.'}, 
+                        { id: 'sectors', name: 'Sectors',
                             formatter: (cell) => {
                                 let output = ""
                                 for (let c of cell.split(",")) {
@@ -133,14 +132,11 @@ export default {
 </script>
 <style scoped>
 #buttonsHolder{
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
 }
 
 .funcBtn{
-    position: absolute;
-    top: 60px;
-    z-index: 999;
+    position: relative;
 }
 
 #ddm {
@@ -149,5 +145,22 @@ export default {
 
 .gridjs-table {
     width: 100% !important;
+}
+
+@media only screen and (min-width: 992px){
+    #buttonsHolder{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .funcBtn{
+        position: absolute;
+        top: 10px;
+        z-index: 999;
+    }
+
+    .gridjs-table {
+        width: 100% !important;
+    }
 }
 </style>

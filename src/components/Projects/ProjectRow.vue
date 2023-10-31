@@ -1,7 +1,7 @@
 <template>
   <div class="project-container container-fluid h-100" @redirect="this.$emit('click')">
     <div class="header m-3 align-middle">
-      <div class="d-flex">
+      <div class="d-md-flex">
         <div class="col-4 d-flex justify-content-start">
           <div class="right">
             <h5 class="has-text-weight-bold"><b>Project:</b> {{ description }} </h5>
@@ -12,7 +12,7 @@
             <h5 class="has-text-weight-bold"><b>Last Modified:</b> {{ last_modified }}</h5>
           </div>
         </div>
-        <div class="col-4 d-flex justify-content-end">
+        <div class="col-4 d-lg-flex justify-content-end">
           <div class="avatar rounded-circle"
             v-for="person in members"
             v-bind:key="'avatar-'+ person.fname"

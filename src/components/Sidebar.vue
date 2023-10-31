@@ -67,6 +67,11 @@
 
       <div class="col">
           <router-view />
+          <footer class="text-center">
+              <div class="pageFooter p-3">
+                  <p>Coded in Singapore | &copy; 2023 Aloysius Tan | <a target="_blank" href="https://ahloytan.netlify.app">ahloytan.netlify.app</a></p>
+              </div>
+          </footer>
       </div>
     </div>
   </div>
@@ -163,5 +168,10 @@ a {
   .logo {
     display: none;
   }
+}
+
+.pageFooter{
+  margin-top: auto;
+  font-size: 0.8rem;
 }
 </style>

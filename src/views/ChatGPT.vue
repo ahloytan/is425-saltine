@@ -29,7 +29,7 @@
 </template>
 <script>
 import LoadingScreen from '../components/LoadingScreen.vue'
-import OpenAI from 'openai';
+// import OpenAI from 'openai';
 
 export default {
     components: {
@@ -45,14 +45,15 @@ export default {
     },
     methods: {
         sendEmail() {
-            // var email = 'sally@saltinecomms.com; annieng@smu.edu.sg; aloysiustan.2020@scis.smu.edu.sg';
-            var email = 'aloysiustan.2020@scis.smu.edu.sg';
+            var email = 'sally@saltinecomms.com; annieng@smu.edu.sg; aloysiustan.2020@scis.smu.edu.sg';
+            // var email = 'aloysiustan.2020@scis.smu.edu.sg; brantneo.2020@scis.smu.edu.sg; gracelui.2019@scis.smu.edu.sg; yuxuan.lim.2020@scis.smu.edu.sg';
             var subject = 'Potential collaboration, Saltine';
             var message = `Good Morning,\n\n${this.queryAns}\n\nThank you so much for your time! I really appreciate your time and I hope to hear from you soon\n\n Warmly,\nAloysius`
             document.location = "mailto:"+email+"?subject="+subject+"&body="+encodeURIComponent(message);
         },
         async generate() {
             this.previousQuery = this.query;
+
             this.loading = true;
             // const openai = new OpenAI({
             //     apiKey: import.meta.env.VITE_API, 
@@ -64,9 +65,8 @@ export default {
             //     model: 'gpt-3.5-turbo',
             // });
 
-            // console.log(chatCompletion.choices);
             // this.queryAns = chatCompletion.choices[0]?.message?.content
-            this.queryAns = 'Ok boss';
+            this.queryAns = 'Hello, unfortunately, the ChatGPT function is not working as this project is only for personal use. For more information. Please email Aloysius, or drop me a text via Telegram @ahloysius';
             this.query = '';
             this.loading = false;
         },
