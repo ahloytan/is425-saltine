@@ -79,12 +79,18 @@
                 originalIdColumn: { id: 'id', name: 'ID', width: '4%'},
                 grid: new Grid({
                     columns: [
-                        { id: 'id', name: 'ID'},
+                        { id: 'id', name: 'ID', width: '4%'},
                         { id: 'name', name: 'Name'},
                         { id: 'email', name: 'Email'},
                         { id: 'mediaType', name: 'Media Type'},
-                        { id: 'jobTitle', name: 'Job Title'}, 
-                        { id: 'mediaInfo', name: 'Media Info'},
+                        { id: 'jobTitle', name: 'Job Aspirations'}, 
+                        { 
+                            id: 'mediaInfo', 
+                            name: 'Social Network',
+                            formatter: (cell) => {
+                                return html(`<a href="${cell}" target="_blank">${cell}</a>`)
+                            }
+                        },
                         { id: 'contact', name: 'Contact No.'}, 
                         { id: 'sectors', name: 'Sectors',
                             formatter: (cell) => {
@@ -97,6 +103,7 @@
                         },
                         { 
                             name: 'Edit',
+                            width: '5%',
                             formatter: (_, row) => {
                             return h('div', {
                                 className: 'fa-lg button bi bi-pencil text-primary',

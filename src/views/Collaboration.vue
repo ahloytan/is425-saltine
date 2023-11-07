@@ -61,7 +61,7 @@ export default {
             loading: false,
             grid: new Grid({
                     columns: [
-                        { id: 'id', name: 'ID'},
+                        { id: 'id', name: 'ID', width: '4%'},
                         { id: 'name', name: 'Name'},
                         { id: 'email', name: 'Email'},
                         { id: 'mediaType', name: 'Media Type'},
@@ -112,7 +112,7 @@ export default {
     },
     async mounted() {
         this.grid.render(document.getElementById("recordsGridTable"));
-        this.refreshTable(this.records.filter(x => x.mediaType === 'Singapore Press Holdings'));
+        this.refreshTable(this.records.filter(x => x.mediaType === 'Singapore Management University'));
     },
     methods: {
         refreshTable(newData){

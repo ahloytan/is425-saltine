@@ -4,7 +4,7 @@
 		<div class="task-inner" @click="openModal">
 			<div id="title" class="d-flex justify-content-between align-items-center">
 				<h6 class="m-0">{{ task.title }}</h6>
-				<div class="d-flex" v-if="task.title == 'Follow-up w/ Sarangly'">
+				<div class="d-flex" v-if="task.title == 'Follow-up w/ Saltine'">
 					<button class="btn btn-primary blue" @click="sendTeleMsg()"><i class="bi bi-chat-left-dots"></i></button>
 				</div>
 			</div>
@@ -95,7 +95,7 @@
 				// 	},
 				// 	body: JSON.stringify({
 				// 		chat_id: chatId,
-				// 		text: 'Hello Team, please remember to follow up with Sarangly about the confirmed media list as it has been 3 weeks! Thankss',
+				// 		text: 'Hello Team, please remember to follow up with Saltine about the confirmed media list as it has been 3 weeks! Thankss',
 				// 	}),
 				// });
 

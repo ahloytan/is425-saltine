@@ -88,7 +88,7 @@ export default {
           polar: {
             type: 'polarArea',
             data: {
-              labels: ['Sarangly', 'Qwerky', 'mulawear'],
+              labels: ['Saltine', 'Qwerky', 'Aliwear'],
               datasets: [{
                 data: [25,30, 12],
                 backgroundColor: ['rgba(102, 51, 255, 0.5)', 'rgb(75, 192, 255)', 'rgb(255, 153, 51)', 'rgb(255, 253, 151)'],
@@ -185,7 +185,7 @@ export default {
         var that = this;
 
         this.donut.data.datasets[0].data = [150, 75, 91];
-        this.donut.data.labels = ['Sarangly', 'Qwerky', 'mulawear '];
+        this.donut.data.labels = ['Saltine', 'Qwerky', 'Aliwear '];
         this.donut.plugins = [{
           beforeDraw: function(chart) {
             var width = chart.chart.width,

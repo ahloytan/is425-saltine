@@ -132,7 +132,6 @@ export default {
   methods: {
     logout() {
       localStorage.removeItem("role");
-      localStorage.removeItem("token");
       this.$router.replace("/login");
     },
   },

@@ -215,8 +215,8 @@ export default {
   data() {
     return {
       username: "",
-      email: "Sally",
-      password: "sally",
+      email: "tes",
+      password: "test",
       contactNumber: "",
       userlogin: true,
       userregister: false,
@@ -226,9 +226,6 @@ export default {
       toastrResponse: "",
       isRegisterButtonClicked: false,
     };
-  },
-  computed: {
-    ...mapGetters(['token']),
   },
   methods: {
     ...mapActions(['logIn']),

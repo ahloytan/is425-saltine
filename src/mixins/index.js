@@ -4,139 +4,47 @@ import csvDownload from 'json-to-csv-export';
 const Mixin = {
     data() {
       return {
-        recognisedRanks: ['Associate Consultant', 'Consultant', 'Senior Consultant', 'Emeritus Consultant'],
-        exceptionTitles: ['prof', 'professor', 'clinical professor', 'clin professor', 'clinical prof', 'clin prof'],
         records: [
             {
                 id: 1,
-                name: "Sumiko Tan",     
-                email: "smk@sph.com.sg",       
-                mediaType: "Singapore Press Holdings",      
-                jobTitle: "Chief Editor",
-                mediaInfo: "https://www.sph.com.sg/",
-                contact: "92135678",
-                sectors: "Banking & Finance, Foreign News, General News, Local News, Sports"
+                name: "Aloysius Tan",     
+                email: "aloysiustan.2020@scis.smu.edu.sg",       
+                mediaType: "Singapore Management University",      
+                jobTitle: "Software Engineer (Front/Back/Full-Stack)",
+                mediaInfo: "https://ahloytan.netlify.app",
+                contact: "91792372",
+                sectors: "Web Development, Frontend Development, Cybersecurity"
             },
             {
                 id: 2,
-                name: "Joyce Lim",
-                email: "joycelim@sph.com.sg",
-                mediaType: "Media Corporation",
-                jobTitle: "Senior Correspondent",
-                mediaInfo: "https://www.mediacorp.com",
-                contact: "98765432",
-                sectors: "Technology, Business, Health, Entertainment"
+                name: "Yu Xuan Lim",
+                email: "lim.yuxuan@outlook.com",
+                mediaType: "Singapore Management University",
+                jobTitle: "Technology Project Management, Business Analyst",
+                mediaInfo: "https://www.linkedin.com/in/yu-xuan-lim/",
+                contact: "@yuxuaaan (Telegram)",
+                sectors: "Technology, Business, Any related fields"
             },
             {
-            id: 3,
-            name: "Salma Khalik",
-            email: "salmaK@sph.com.sg",
-            mediaType: "News Network",
-            jobTitle: "Senior Correspondent",
-            mediaInfo: "https://www.newsnetwork.com",
-            contact: "94632485",
-            sectors: "Politics, Environment, Science, Lifestyle"
+                id: 3,
+                name: "Grace Lui",
+                email: "gra.char.lui@gmail.com",
+                mediaType: "Singapore Management University",
+                jobTitle: "Product Management, Business Analyst",
+                mediaInfo: "https://www.linkedin.com/in/gracecharlottelui/",
+                contact: "@charlotteyo21 (Telegram)",
+                sectors: "Technology, Business, Any related fields"
             },
             {
                 id: 4,
-                name: "David Lee",
-                email: "david.lee@email.com",
-                mediaType: "Global News Times",
-                jobTitle: "Foreign Correspondent",
-                mediaInfo: "https://www.globalnewstimes.com",
-                contact: "87694762",
-                sectors: "International Relations, Technology, Politics"
-            },
-            {
-                id: 5,
-                name: "Sarah Johnson",
-                email: "sarah.johnson@email.com",
-                mediaType: "Press Gazette",
-                jobTitle: "Reporter",
-                mediaInfo: "https://www.pressgazette.com",
-                contact: "8866421",
-                sectors: "Media, Arts, Culture, Education"
-            },
-            {
-                id: 6,
-                name: "Michael Brown",
-                email: "michael.brown@email.com",
-                mediaType: "City Times",
-                jobTitle: "Sports Editor",
-                mediaInfo: "https://www.citytimes.com",
-                contact: "76543210",
-                sectors: "Sports, Local News, Entertainment"
-            },
-            {
-                id: 7,
-                name: "Linda Wilson",
-                email: "linda.wilson@email.com",
-                mediaType: "Business Herald",
+                name: "Brant Neo",
+                email: "brantneo.2020@scis.smu.edu.sg",
+                mediaType: "Singapore Management University",
                 jobTitle: "Business Analyst",
-                mediaInfo: "https://www.businessherald.com",
-                contact: "34567890",
-                sectors: "Business, Finance, Economy, Technology"
-            },
-            {
-                id: 8,
-                name: "Peter Jackson",
-                email: "peter.jackson@email.com",
-                mediaType: "Tech Insight",
-                jobTitle: "Tech Writer",
-                mediaInfo: "https://www.techinsight.com",
-                contact: "65432109",
-                sectors: "Technology, Gadgets, Startups"
-            },     
-            {
-                id: 9,
-                name: "Hannah Davis",
-                email: "hannah.davis@email.com",
-                mediaType: "Singapore Press Holdings",
-                jobTitle: "Health Reporter",
-                mediaInfo: "https://www.healthwatch.com",
-                contact: "43210987",
-                sectors: "Health, Medicine, Wellness, Research"
-            },    
-            {
-                id: 10,
-                name: "Tom Wilson",
-                email: "tom.wilson@email.com",
-                mediaType: "Travel Times",
-                jobTitle: "Travel Writer",
-                mediaInfo: "https://www.traveltimes.com",
-                contact: "61098723",
-                sectors: "Travel, Tourism, Adventure"
-            },  
-            {
-                id: 11,
-                name: "Emily Hall",
-                email: "emily.hall@email.com",
-                mediaType: "Fashion Daily",
-                jobTitle: "Fashion Editor",
-                mediaInfo: "https://www.fashiondaily.com",
-                contact: "10987654",
-                sectors: "Fashion, Style, Beauty"
-            },   
-            {
-                id: 12,
-                name: "Daniel Perez",
-                email: "daniel.perez@email.com",
-                mediaType: "Singapore Press Holdings",
-                jobTitle: "Science Journalist",
-                mediaInfo: "https://www.scienceworld.com",
-                contact: "98761234",
-                sectors: "Science, Research, Environment, Space"
-            },   
-            {
-                id: 13,
-                name: "Ella Martin",
-                email: "ella.martin@email.com",
-                mediaType: "Singapore Press Holdings",
-                jobTitle: "Food Critic",
-                mediaInfo: "https://www.foodgazette.com",
-                contact: "87654321",
-                sectors: "Food, Culinary Arts, Dining"
-            }                                                       
+                mediaInfo: "https://www.linkedin.com/in/brantneo/",
+                contact: "98330787",
+                sectors: "Technology, Business, Any related fields"
+            },                                                   
         ]
       };
     },

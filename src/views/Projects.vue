@@ -67,7 +67,7 @@ export default {
 				{
 					created_at: "2023-10-13T08:00:00",
 					creator: "UserA",
-					description: "Sarangly",
+					description: "Saltine",
 					last_modified: "24/10/2023 3.30pm",
 					project_id: 1,
 					members: [{ "user_email": "admin@admin.com", "fname": "Super", "lname": "Admin" }, { "user_email": "larry@hotmail.com", "fname": "Larry", "lname": "Bird" }, { "user_email": "john@gmail.com", "fname": "John", "lname": "Cena" }, { "user_email": "mark@hotmail.com", "fname": "Marks", "lname": "Spencer" }, { "user_email": "susan@hotmail.com", "fname": "Susan", "lname": "Davis" }, { "user_email": "james@gmail.com", "fname": "James", "lname": "Wilson" }]
@@ -83,7 +83,7 @@ export default {
 				{
 					created_at: "2023-10-15T10:30:00",
 					creator: "UserC",
-					description: "mulawear",
+					description: "Aliwear",
 					last_modified: "23/10/2023 2.00pm",
 					project_id: 3,
 					members: [{ "user_email": "admin@admin.com", "fname": "Super", "lname": "Admin" }, { "user_email": "laura@hotmail.com", "fname": "Laura", "lname": "Moore" }, { "user_email": "jessica@gmail.com", "fname": "Jessica", "lname": "Taylor" }, { "user_email": "kevin@hotmail.com", "fname": "Kevin", "lname": "Martin" }, { "user_email": "bob@gmail.com", "fname": "Bob", "lname": "Smith" } ]
